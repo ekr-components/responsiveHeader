@@ -1,0 +1,19 @@
+[data-component="responsive-header"] [data-rh="desktop"] {
+  overflow: hidden;
+  transition: 0.5s width;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+[data-component="responsive-header"] [data-rh="mobile"] {
+  opacity: 0;
+  display: none;
+}
+[data-component="responsive-header"] [data-rh="mobile"] [data-rh-mobile="trigger"] {
+  cursor: pointer;
+}
+[data-component="responsive-header"] [data-rh="mobile"] [data-rh-mobile="menu"] {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s height;
+}

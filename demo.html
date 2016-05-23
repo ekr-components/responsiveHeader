@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="responsive-header.css">
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="responsive-header.js"></script>
+<style type="text/css">
+body {
+    margin: 0;
+    height: 9000px;
+}
+.header-desktop {
+    height: 100px;
+    background: purple;
+}
+.header-desktop.isScrolled {
+    height: 50px;
+}
+.header-desktop ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+.header-desktop li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    line-height: 50px;
+    color: white;
+}
+.header-mobile {
+    height: 50px;
+    background: blue;
+    position: relative;
+}
+.menu-trigger {
+    width: 30px;
+    height: 30px;
+    background: red;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.menu {
+    background: teal;
+    position: absolute;
+    top: 50px;
+}
+</style>
+</head>
+<body>
+<div data-component="responsive-header">
+    <header class="header-desktop" data-rh="desktop">
+        <ul>
+            <li>Menu Item 1</li>
+            <li>Menu Item 2</li>
+            <li>Menu Item 3</li>
+        </ul>
+    </header>
+    <header class="header-mobile" data-rh="mobile">
+        <!-- Header goes here -->
+        <span class="menu-trigger" data-rh-mobile="trigger"></span>
+        <div class="menu" data-rh-mobile="menu">
+            <ul>
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+                <li>Menu Item 4</li>
+                <li>Menu Item 5</li>
+                <li>Menu Item 6</li>
+            </ul>
+        </div>
+    </header>
+</div>
+</body>
+</html>
