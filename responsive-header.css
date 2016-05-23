@@ -1,0 +1,14 @@
+[data-component="header"] [data-header-responsive="desktop"] {
+  overflow: hidden;
+  transition: 0.5s width;
+  display: none;
+}
+[data-component="header"] [data-header-responsive="mobile"] {
+  opacity: 0;
+  display: none;
+}
+[data-component="header"] [data-header-responsive="mobile"] [data-header-mobile="menu"] {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s height;
+}
