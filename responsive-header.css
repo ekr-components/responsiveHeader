@@ -1,6 +1,4 @@
 [data-component="responsive-header"] [data-rh="desktop"] {
-  overflow: hidden;
-  transition: 0.5s width;
   position: fixed;
   width: 100%;
   top: 0;
